@@ -1,0 +1,39 @@
+create table APP_USER (
+   id SERIAL PRIMARY KEY,
+   name CHAR(100) NOT NULL UNIQUE,
+   password CHAR(100) NOT NULL,
+   email CHAR(100) NOT NULL,
+   green bit
+);
+
+create table USER_PROFILE(
+   id SERIAL PRIMARY KEY,
+   type CHAR(30) NOT NULL UNIQUE
+);
+
+CREATE TABLE APP_USER_USER_PROFILE (
+    user_id SERIAL NOT NULL,
+    user_profile_id SERIAL NOT NULL,
+    PRIMARY KEY (user_id, user_profile_id),
+    CONSTRAINT FK_APP_USER FOREIGN KEY (user_id) REFERENCES APP_USER (id),
+    CONSTRAINT FK_USER_PROFILE FOREIGN KEY (user_profile_id) REFERENCES USER_PROFILE (id)
+);
+
+create table TOKEN (
+   id SERIAL PRIMARY KEY,
+   token CHAR(100) NOT NULL,
+   expirydate CHAR(100) NOT NULL,
+   user_id INTEGER NOT NULL,
+   FOREIGN KEY (user_id) REFERENCES APP_USER(id)
+);
+
+create table PASSWORDRESETTOKEN (
+   id SERIAL PRIMARY KEY,
+   token CHAR(100) NOT NULL,
+   expirydate CHAR(100) NOT NULL,
+   user_id INTEGER NOT NULL,
+   FOREIGN KEY (user_id) REFERENCES APP_USER(id)
+);
+
+INSERT INTO USER_PROFILE(type)
+VALUES ('SOFTWARE_DEVELOPER'),('UI_DESIGNER'),('DATA_ARCHITECT'),('CLOUD_ARCHITECT'),('TECHNICAL_LEAD');

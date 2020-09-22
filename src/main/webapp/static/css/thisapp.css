@@ -1,0 +1,226 @@
+/* --------------------- 
+BASIC SETTINGS
+--------------------- */
+body,
+html {
+	font-family: Poppins-Regular, sans-serif;
+}
+
+body {
+	background-color: azure;
+}
+
+.btn-primary .btn-default{
+    min-width: 120px;
+}
+
+/* ---------------------
+LOGIN SETTINGS
+--------------------- */
+
+.container-login {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.container-login::before {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.container-login-form-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrap-login {
+    width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 55px 55px 37px 55px;
+
+    background: #71c3f1;
+    background: -webkit-linear-gradient(top, #fffebb, #b4e9f3);
+}
+
+.wrap-input {
+    height: 100px;
+}
+
+.login-form {
+    width: 100%;
+}
+
+.login-form-logo {
+    font-size: 60px;
+    color: #333333;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.login-fa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+}
+
+.login-fa i {
+    color: #fff;
+    padding: 15px 0px 0px 0px;
+    font-size: 23px;
+    margin-left: -40px;
+}
+
+.login-form-title {
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    margin: 10px;
+    width: 100%;
+    height: 30%;
+}
+
+.p-t-b {
+    padding-top: 90px;
+}
+
+.text-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-login-form-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form-btn {
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.2;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+    height: 50px;
+    border-radius: 25px;
+
+    background: #71c3f1;
+    background: -webkit-linear-gradient(top, #fffebb, #b4e9f3);
+    position: relative;
+    z-index: 1;
+
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.login-form-btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    border-radius: 25px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    opacity: 1;
+
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.login-form-btn:hover {
+    color: #fff;
+}
+
+.login-form-btn:hover:before {
+    opacity: 0;
+}
+
+.link-form {
+    font-size: 18px;
+    color: #666666;
+    line-height: 1.5;
+    padding-left: 20px;
+}
+
+.form-group{
+    width: 80%;
+}
+
+/* ---------------------
+REGISTRATION SETTINGS
+--------------------- */
+.select-registration-form {
+    margin: 10px;
+    min-width: 200px;
+}
+
+.g-recaptcha{
+    margin: 10px;
+}
+
+.registration-space {
+    margin-top: 35px;
+}
+
+.form-error{
+    margin: 10px 0 10px 10px;
+    color: red;
+}
+
+.alert-danger {
+    color: red;
+    text-align: center;
+}
