@@ -15,7 +15,7 @@
 <body>
 <div class="container">
     <h1 class="alert alert-danger">Session expired</h1>
-    <a class="btn btn-primary" href="${contextPath}//login">Login</a>
+    <a class="btn btn-primary" href="${contextPath}/login">Login</a>
 </div>
 </body>
 </html>

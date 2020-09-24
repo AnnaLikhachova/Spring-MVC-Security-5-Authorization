@@ -38,7 +38,6 @@ public class UserValidator implements Validator {
 
 		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "name", "Required");
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "password", "Required");
-        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "userProfiles", "Required");
 
 		if (user.getName().length() < 7 || user.getName().length() > 16) {
 			errors.rejectValue("name", "Size.userForm.username");
@@ -70,6 +69,9 @@ public class UserValidator implements Validator {
             errors.rejectValue("email", "Duplicate.userForm.email");
         }
 
+        if (user.getUserProfiles().isEmpty()) {
+            errors.rejectValue("userProfiles", "Profile.empty");
+        }
 
     }
 

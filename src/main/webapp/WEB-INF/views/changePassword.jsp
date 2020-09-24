@@ -22,27 +22,12 @@
     <title>Reset password</title>
 </head>
 <body>
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">home</a>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="${contextPath}/logout">Logout</a></li>
-        </ul>
-    </div>
-</nav>
 <div class="container">
     <div class="row">
         <div id="error-info" class="alert alert-danger" style="display:none"></div>
         <h1>change password </h1>
         <form>
             <br/>
-            <label class="col-sm-2">Old</label>
-            <span class="col-sm-5"><input class="form-control" id="oldpass" name="oldPassword" type="password"
-                                          value=""/></span>
-            <span class="col-sm-5"></span>
-            <br/><br/>
             <label class="col-sm-2">New</label>
             <span class="col-sm-5"><input class="form-control" id="password" name="newPassword" type="password"
                                           value=""/></span>

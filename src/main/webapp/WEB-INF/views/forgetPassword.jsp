@@ -19,31 +19,20 @@
 <title>reset</title>
 </head>
 <body>
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">home</a>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="${contextPath}/logout">Logout</a></li>
-        </ul>
-    </div>
-</nav>
 <div class="container">
     <h1>Reset password</h1>
     <br/>
-    <div class="row">
-      <form action="#">
-        <label class="col-sm-2">Enter your email</label>
-        <span class="col-sm-5"><input class="form-control" id="email" name="email" type="email" value="" required="required" /></span>
-        <button class="btn btn-primary" type="submit">reset</button>
-      </form>
-    </div>
-
-<br/> 
-<a class="btn btn-default" href="${contextPath}/registration">registration</a>
-<br/><br/>
-<a class="btn btn-default" href="${contextPath}/login">login</a>
+    <form action="#">
+        <div class="form-reset">
+            <label class="form-reset-title">Enter your email</label>
+            <span class="form-reset-row"><input class="form-reset-input" id="email" name="email" type="email" value="" required="required"/></span>
+            <button class="btn btn-primary" type="submit">reset</button>
+        </div>
+    </form>
+    <br/>
+    <a class="btn btn-default" href="${contextPath}/registration">registration</a>
+    <br/><br/>
+    <a class="btn btn-default" href="${contextPath}/login">login</a>
 </div>
 </body>
 </html>

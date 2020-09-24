@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="container">
-<h1 class="alert alert-danger">${message.logoutSucc}</h1>
+<h1 class="alert alert-danger">${message}</h1>
 <div class="navigation-panel-link"><a href="${contextPath}/login" class="link-form">Sign in</a> </div>
 </div>
 </body>

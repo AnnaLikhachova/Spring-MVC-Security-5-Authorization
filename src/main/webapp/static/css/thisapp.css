@@ -10,8 +10,13 @@ body {
 	background-color: azure;
 }
 
-.btn-primary .btn-default{
+.btn {
     min-width: 120px;
+}
+
+.btn-primary {
+    height: 35px;
+    margin-top: 7px;
 }
 
 /* ---------------------
@@ -223,4 +228,33 @@ REGISTRATION SETTINGS
 .alert-danger {
     color: red;
     text-align: center;
+}
+
+/* ---------------------
+RESET PASSWORD SETTINGS
+--------------------- */
+
+.form-reset {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.form-reset-input {
+    height: 30px;
+    width: 400px;
+    padding-right: 10px;
+}
+
+.form-reset-title {
+    width: 15%;
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+.form-reset-row {
+    padding: 10px;
+    width: 40%;
+
 }

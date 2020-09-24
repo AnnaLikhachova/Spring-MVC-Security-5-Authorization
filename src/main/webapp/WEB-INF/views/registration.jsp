@@ -73,12 +73,14 @@
                     </div>
                 </spring:bind>
 
+                <spring:bind path="userProfiles">
                 <div class="wrap-input validate-input select-form select-registration-form">
                     <form:select class="select-registration" type="hidden"
                                  path="userProfiles" items="${roles}" itemValue="id"
                                  multiple="true" itemLabel="type"/>
                     <form:errors class="form-error" path="userProfiles"/>
                 </div>
+                </spring:bind>
 
                 <div class="registration-space"></div>
 
